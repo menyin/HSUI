@@ -1,0 +1,1557 @@
+<!doctype html>
+<html class="docs-html">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>ICSSHS-UI</title>
+  <!--项目全局样式-->
+  <link href="../../../web/projects/themes-default/resources/css/global.css" rel="stylesheet" type="text/css">
+  <link href="../../../web/projects/themes-default/resources/css/css3-hsui.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" type="text/css" href="../../../web/dcresources/icons/action/themes-default/icon-action.css">
+  <link href="../../../web/dcresources/icons/menu/layout-default/icon-menu.css" rel="stylesheet" type="text/css">
+  <!--说明文档样式,实际应用中请不要引用-->
+  <link rel="stylesheet" type="text/css" href="../../resources/css/docs.css">
+  <script src="../../../web/projects/themes-default/resources/js/jquery-1.9.1.js"></script>
+</head>
+<body>
+<div class="docs-content">
+  <div class="docs-page-masthead">
+    <h1>UI-KIT</h1>
+    <p class="docs-lead">综合组件库</p>
+  </div>
+  
+  <h2>基础元素</h2>
+  <!--------------------------------------------------------------------
+  	按钮
+  ---------------------------------------------------------------------->
+  <h3>按钮</h3>
+  <div class="docs-example">
+  	<div class="h-container">
+    <div class="h-row">
+      <div class="h-col-g12-5">
+        <!--表单按钮 -->
+        <a class="h-btn h-btn-form" href="#">
+          <span class="h-btn-content">表单按钮</span>
+        </a>
+        <a class="h-btn h-btn-form h-btn-primary" href="#">
+          <span class="h-btn-content">重要按钮</span>
+        </a>
+        <a class="h-btn h-btn-form h-btn-danger" href="#">
+          <span class="h-btn-content">风险按钮</span>
+        </a>
+      </div>
+      <div class="h-col-g12-5">
+        
+        <!--工具栏按钮 -->
+        <a class="h-btn h-btn-toolbar" href="#">
+          <span class="h-btn-content">
+          <span class="h-icon h-icon-add"></span> 工具栏按钮 </span>
+        </a>
+        <!--disabled按钮 -->
+        <a class="h-btn h-btn-toolbar h-disabled" href="#">
+          <span class="h-btn-content">
+          <span class="h-icon h-icon-delete"></span> disable </span>
+        </a>
+        <!--disabled按钮 -->
+        <a class="h-btn h-disabled" href="#">
+          <span class="h-btn-content">disable</span>
+        </a>
+        <!--下拉按钮右边箭头 -->
+        
+        <a href="#"  class="h-btn h-dropdown-toggle">
+          <span class="h-btn-content">更多 <span class="h-caret"></span>
+          </span>
+        </a>
+      </div>
+      <div class="h-col-g12-2">
+        <!--表格内按钮 -->
+        <a class="h-btn h-btn-table" href="#">
+          <span class="h-btn-content">
+          <span class="h-icon h-icon-delete"></span>
+          </span>
+        </a>
+        <em class="h-badge-number">8</em>
+        <!--无背景按钮 -->
+        <a class="h-btn h-btn-nobg" href="#">
+          <span class="h-btn-content">
+          <span class="h-icon h-icon-delete"></span> 无背景按钮 </span>
+        </a>
+      </div>
+      <div class="h-col-g12-5 h-mt-20">
+        <div class="h-btn-group">
+          <a class="h-btn" href="#">
+            <span class="h-btn-content">左边</span>
+          </a>
+          <a class="h-btn " href="#">
+            <span class="h-btn-content">中间</span>
+          </a>
+          <a class="h-btn h-active" href="#">
+            <span class="h-btn-content">选中</span>
+          </a>
+          <a class="h-btn" href="#">
+            <span class="h-btn-content">右边</span>
+          </a>
+          <a class="h-btn" href="#">
+            <span class="h-btn-content">右边</span>
+          </a>
+          <a class="h-btn" href="#">
+            <span class="h-btn-content">右边</span>
+          </a>
+        </div>
+      </div>
+      <div class="h-col-g12-4 h-mt-20">
+        <!--开关按钮 -->
+        <div class="h-trigger h-acitve" href="#">
+          <span class="h-trigger-content">开</span>
+        </div>
+        <div class="h-trigger" href="#">
+          <span class="h-trigger-content">关</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <div class="docs-highlight">
+    <pre><code></code></pre>
+  </div>
+  
+  <!--------------------------------------------------------------------
+  	表单元素
+  ---------------------------------------------------------------------->
+  <h3>表单元素</h3>
+  <div class="docs-example">
+  <div class="h-container">
+    <div class="h-row">
+      <div  class="h-col-g12-2">
+        <div class="h-col-content">
+          <input type="text" class="h-form-control" id="" placeholder="请输入内容">
+        </div>
+      </div>
+      <div  class="h-col-g12-2">
+        <div class="h-col-content">
+          <input type="text" class="h-form-control h-form-control-danger" id="" placeholder="请输入内容" value="已输入的错误内容">
+        </div>
+      </div>
+      <div  class="h-col-g12-2">
+        <div class="h-col-content">
+          <input type="text" class="h-form-control h-form-control-disabled" disabled id="" placeholder="请输入内容" value="disabled状态输入框">
+        </div>
+      </div>
+      <div  class="h-col-g12-2">
+        <div class="h-col-content">
+          <input type="text" class="h-form-control h-form-control-normal" readonly value="覆盖readonly样式">
+        </div>
+      </div>
+      <div  class="h-col-g12-2">
+        <div class="h-col-content">
+          <div class="h-checkbox">
+            <label >
+              <input type="checkbox" >
+              复选框</label>
+          </div>
+        </div>
+      </div>
+      <div  class="h-col-g12-2">
+        <div class="h-col-content">
+          <div class="h-radio">
+            <label>
+              <input type="radio">
+              单选框</label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <div class="docs-highlight">
+    <pre><code></code></pre>
+  </div>
+  <!--------------------------------------------------------------------
+  	组合表单元素
+  ---------------------------------------------------------------------->
+  <h3>组合表单控件-table布局</h3>
+  <p>使用table布局的样式，最终要改成这个标签结构</p>
+  <div class="docs-example">
+  <div class="h-container">
+    <div class="h-row">
+      <div  class="h-col-g12-4 ">
+        <div class="h-col-content">
+          <div class="h-input-group">
+            <span class="h-input-group-addon">@</span>
+            <div class="h-form-control-group">
+              <input type="text" class="h-form-control">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div  class="h-col-g12-4 ">
+        <div class="h-col-content">
+          <div class="h-input-group">
+            <div class="h-form-control-group">
+              <input type="text" class="h-form-control">
+            </div>
+            <span class="h-input-group-addon">.00</span>
+          </div>
+        </div>
+      </div>
+      <div  class="h-col-g12-4 ">
+        <div class="h-col-content">
+          <div class="h-input-group">
+            <span class="h-input-group-addon">$</span>
+            <div class="h-form-control-group">
+              <input type="text" class="h-form-control">
+            </div>
+            <span class="h-input-group-addon">.00</span>
+          </div>
+        </div>
+      </div>
+      <div  class="h-col-g12-4 h-mt-20">
+        <div class="h-col-content">
+          <div class="h-input-group">
+            <span class="h-input-group-addon">
+            <input type="checkbox">
+            </span>
+            <div class="h-form-control-group">
+              <input type="text" class="h-form-control">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div  class="h-col-g12-4 h-mt-20">
+        <div class="h-col-content">
+          <div class="h-input-group">
+            <div class="h-form-control-group">
+              <span class=" h-icon h-icon-search"></span>
+              <a class=" h-icon h-icon-close" href="#"></a>
+              <input type="text" class="h-form-control " style="padding-left:25px; padding-right:25px;" id="" placeholder="单据日期">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div  class="h-col-g12-4 h-mt-20">
+        <div class="h-col-content">
+          <div class="h-input-group">
+            <span class="h-input-group-btn">
+            <a class="h-btn" href="#">
+              <span class="h-btn-content">按钮</span>
+            </a>
+            </span>
+            <div class="h-form-control-group">
+              <input type="text" class="h-form-control">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div  class="h-col-g12-4 h-mt-20">
+        <div class="h-col-content">
+          <div class="h-input-group">
+            <div class="h-form-control-group">
+              <span class=" h-icon h-icon-search"></span>
+              <a class=" h-icon h-icon-close" href="#"></a>
+              <input type="text" class="h-form-control "  style="padding-left:25px; padding-right:25px;" id="" placeholder="单据日期">
+            </div>
+            <span class="h-input-group-btn">
+            <a class="h-btn" href="#">
+              <span class="h-btn-content">
+              <span class="h-icon h-icon-search"></span>
+              </span>
+            </a>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <div class="docs-highlight">
+    <pre><code></code></pre>
+  </div>
+  <!--------------------------------------------------------------------
+  	下拉内容
+  ---------------------------------------------------------------------->
+  <h3>下拉内容</h3>
+    <div class="docs-example">
+
+  <div class="h-container">
+    <div class="h-row" style="height:200px;">
+      <div class="h-col-g12-3">
+        <div class="h-btn-group">
+          <a href="#"  class="h-btn h-dropdown-toggle">
+            <span class="h-btn-content"> 更多 <span class="h-caret"></span>
+            </span>
+          </a>
+          <!--下拉菜单-->
+          <div class="h-dropdown-area">
+            <ul class="h-dropdown-list">
+              <li class="h-dropdown-item ">
+                <a href="#" class="h-block ">
+                  <span class="h-icon h-icon-add"></span> 新增</a>
+              </li>
+              <li class="h-dropdown-item">
+                <a href="#" class="h-block">
+                  <span class="h-icon h-icon-copy"></span> 复制</a>
+              </li>
+              <li class="h-dropdown-item">
+                <a href="#" class="h-block">
+                  <span class="h-icon h-icon-edit"></span> 编辑</a>
+              </li>
+              <li class="h-separate"></li>
+              <li class="h-dropdown-item">
+                <a href="#" class="h-block">
+                  <span class="h-icon h-icon-delete"></span> 删除</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="h-col-g12-3">
+        <div class="h-form-group">
+          <div class="h-form-label-wrapper">
+            <label class="h-form-label" for="">下拉多选</label>
+          </div>
+          <div class="h-form-control-wrapper">
+            <input type="text" class="h-form-control" id="" placeholder="请选择内容" value="">
+            <!--下拉菜单-->
+            
+            <div class="h-dropdown-area">
+              <ul class="h-dropdown-list">
+                <li class="h-dropdown-item">
+                  <div class="h-checkbox h-pl-10">
+                    <label>
+                      <input type="checkbox">
+                      下拉选项</label>
+                  </div>
+                </li>
+                <li class="h-dropdown-item">
+                  <div class="h-checkbox  h-pl-10">
+                    <label>
+                      <input type="checkbox">
+                      下拉选项</label>
+                  </div>
+                </li>
+                <li class="h-dropdown-item">
+                  <div class="h-checkbox  h-pl-10">
+                    <label>
+                      <input type="checkbox">
+                      下拉选项</label>
+                  </div>
+                </li>
+                <li class="h-dropdown-item">
+                  <div class="h-checkbox  h-pl-10">
+                    <label>
+                      <input type="checkbox">
+                      下拉选项</label>
+                  </div>
+                </li>
+              </ul>
+              <div class="h-toolbar h-toolbar-footer">
+                <div class=" h-pull-right h-inline-block-wrapper" >
+                  <a class="h-btn h-btn-form h-btn-primary " href="#">
+                    <span class="h-btn-content"> 确定 </span>
+                  </a>
+                  <a class="h-btn h-btn-form" href="#">
+                    <span class="h-btn-content"> 取消 </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="h-col-g12-3">
+        <div class="h-form-group">
+          <div class="h-form-label-wrapper">
+            <label class="h-form-label" for="">智能联想输入 <span class="h-color-required">*</span>
+            </label>
+          </div>
+          <div class="h-form-control-wrapper">
+            <input type="text" class="h-form-control" id="" placeholder="请输入内容" value="烟">
+            <!--下拉菜单-->
+            
+            <div class="h-dropdown-area">
+              <ul class="h-dropdown-list">
+                <li class="h-dropdown-item">
+                  <a href="#" class="h-block">烟叶处理</a>
+                </li>
+                <li class="h-dropdown-item">
+                  <a href="#" class="h-block"> 烟叶品种管理</a>
+                </li>
+                <li class="h-dropdown-item">
+                  <a href="#" class="h-block"> 烟农档案管理</a>
+                </li>
+                <li class="h-separate"></li>
+                <li class="h-dropdown-item">
+                  <a href="#" class="h-block"> 烟叶等级设置</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="h-col-g12-3">
+        <div class="h-form-group">
+          <div class="h-form-label-wrapper">
+            <label class="h-form-label" for="">应用搜索 <span class="h-color-required">*</span>
+            </label>
+          </div>
+          <div class="h-form-control-wrapper">
+            <input type="text" class="h-form-control" id="" placeholder="请输入内容" value="烟">
+            <!--下拉菜单-->
+            
+            <div class="h-dropdown-area">
+              <ul class="h-dropdown-list">
+                <li class="h-dropdown-item active">
+                  <a href="#"  class="h-block">
+                    <div class="h-item-l">
+                      <span class="h-icon h-icon-xl" ></span>
+                    </div>
+                    <div class="h-item-r">
+                      <strong >烟农档案管理 </strong><br>
+                      <span> 调拔管理 &gt; 烟农管理</span>
+                    </div>
+                  </a>
+                </li>
+                <li class="h-dropdown-item">
+                  <a href="#"  class="h-block" >
+                    <div class="h-item-l">
+                      <span class="h-icon h-icon-xl"></span>
+                    </div>
+                    <div class="h-item-r">
+                      <strong >烟叶等级设置 </strong><br>
+                      <span> 调拔管理 &gt; 全局设置</span>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="h-container">
+    <div class="h-row" style="height:200px;">
+      <div class="h-col-g12-4">
+        <div style="height:120px;">
+          <div class="h-form-group" >
+            <div class="h-form-label-wrapper">
+              <label class="h-form-label" for="">输入联想无结果 <span class="h-color-required">*</span>
+              </label>
+            </div>
+            <div class="h-form-control-wrapper">
+              <input type="text" class="h-form-control" id="" placeholder="行预警样式效果选择" value="烟叶品种; 烟技成分">
+              <!--下拉菜单-->
+              
+              <div class="h-dropdown-area">
+                <div class=" h-pad10 h-color-muted ">
+                  未找到与 <span class="h-color-danger h-font-b h-ml-5 h-mr-5 h-font-12">"烟技成分"</span> 相关数据，请重新输入
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="h-form-group">
+          <div class="h-form-label-wrapper">
+            <label class="h-form-label" for="">输入联想无结果 <span class="h-color-required">*</span>
+            </label>
+          </div>
+          <div class="h-form-control-wrapper">
+            <input type="text" class="h-form-control" id="" placeholder="行预警样式效果选择" value="烟叶品种; 烟技成分">
+            <!--下拉菜单-->
+            
+            <div class="h-dropdown-area">
+              <div class=" h-pad10">
+                <div class="h-loading">
+                  <span class="h-icon h-icon-loading"></span>
+                  <span class="h-loading-text">数据加载中...</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="h-col-g12-4">
+        <div class="h-form-group">
+          <div class="h-form-label-wrapper">
+            <label class="h-form-label" for="">行预警样式效果 <span class="h-color-required">*</span>
+            </label>
+          </div>
+          <div class="h-form-control-wrapper">
+            <input type="text" class="h-form-control" id="" placeholder="行预警样式效果选择" value="">
+            <!--下拉菜单-->
+            
+            <div class="h-dropdown-area">
+              <ul class="h-dropdown-list">
+                <li class="h-dropdown-item h-bg-success-light">
+                  <a href="#" class="h-block" >
+                    <div>
+                      成功信息
+                    </div>
+                  </a>
+                </li>
+                <li class="h-dropdown-item h-bg-info-light">
+                  <a href="#" class="h-block"> 帮助信息</a>
+                </li>
+                <li class="h-dropdown-item h-bg-warning-light">
+                  <a href="#" class="h-block"> 警示信息</a>
+                </li>
+                <li class="h-dropdown-item h-bg-danger-light">
+                  <a href="#" class="h-block"> 错误信息</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="h-col-g12-4">
+        <div class="h-form-group">
+          <div class="h-form-label-wrapper">
+            <label class="h-form-label" for="">列预警样式效果 <span class="h-color-required">*</span>
+            </label>
+          </div>
+          <div class="h-form-control-wrapper">
+            <input type="text" class="h-form-control" id="" placeholder="列预警样式效果选择" value="">
+            <!--下拉菜单-->
+            
+            <div class="h-dropdown-area">
+              <ul class="h-dropdown-list">
+                <li class="h-dropdown-item">
+                  <a href="#" class="h-block " >
+                    <span class="h-color-success h-font-b">成功信息</span>
+                  </a>
+                </li>
+                <li class="h-dropdown-item">
+                  <a href="#" class="h-block">
+                    <span class="h-color-info h-font-b">帮助信息</span>
+                  </a>
+                </li>
+                <li class="h-dropdown-item">
+                  <a href="#" class="h-block">
+                    <span class="h-color-warning h-font-b">警示信息</span>
+                  </a>
+                </li>
+                <li class="h-dropdown-item">
+                  <a href="#" class="h-block">
+                    <span class="h-color-danger h-font-b">错误信息</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    </div>
+    <div class="docs-highlight">
+    <pre><code></code></pre>
+  </div>
+
+  
+  
+  <!--------------------------------------------------------------------
+  	工具
+  ---------------------------------------------------------------------->
+  
+  <h3>工具</h3>
+    <div class="docs-example">
+    <div class="docs-icons">
+          <a href="" class="h-icon h-icon-maximize"></a>
+          <a href="" class="h-icon h-icon-restore"></a>
+          <a href="" class="h-icon h-icon-minimize"></a>
+          <a href="" class="h-icon h-icon-up"></a>
+          <a href="" class="h-icon h-icon-down"></a>
+          <a href="" class="h-icon h-icon-left"></a>
+          <a href="" class="h-icon h-icon-right"></a>
+          <a href="" class="h-icon h-icon-help"></a>
+          <a href="" class="h-close"></a>
+        </div>
+    </div>
+    <div class="docs-highlight">
+    <pre><code></code></pre>
+  </div>
+  
+  
+  <h3>可激活工具</h3>
+    <div class="docs-example">
+    <div class="docs-icons">
+          <a href="" class="h-icon h-icon-favorite"></a>
+          <a href="" class="h-icon h-icon-favorite-acitve"></a>
+          <a href="" class="h-icon h-icon-setting"></a>
+          <a href="" class="h-icon h-icon-setting-active"></a>
+        </div>
+    </div>
+    <div class="docs-highlight">
+    <pre><code></code></pre>
+  	</div>
+  
+  <!--------------------------------------------------------------------
+  	图标
+  ---------------------------------------------------------------------->
+  <h2>图标</h2>
+  <h3>工具栏图标库</h3>
+  <div class="docs-example">
+  <div class="docs-icons">
+    <ul class="docs-grid">
+      <li>
+        <span class="h-icon h-icon-add"></span> 新增</li>
+      <li>
+        <span class="h-icon h-icon-delete"></span> 删除、清空</li>
+      <li>
+        <span class="h-icon h-icon-edit"></span> 编辑</li>
+      <li>
+        <span class="h-icon h-icon-batch-edit"></span> 批量编辑</li>
+      <li>
+        <span class="h-icon h-icon-view"></span> 预览、查看、详细</li>
+      <li>
+        <span class="h-icon h-icon-save"></span> 保存</li>
+      <li>
+        <span class="h-icon h-icon-copy"></span> 复制</li>
+      <li>
+        <span class="h-icon h-icon-confirm"></span> 确认、审核、核对</li>
+      <li>
+        <span class="h-icon h-icon-invalid"></span> 作废、失效</li>
+      <li>
+        <span class="h-icon h-icon-refuse"></span> 拒绝、驳回</li>
+      <li>
+        <span class="h-icon h-icon-cancel"></span> 取消、关闭</li>
+      <li>
+        <span class="h-icon h-icon-quit"></span> 退出</li>
+      <li>
+        <span class="h-icon h-icon-play"></span> 开始、播放</li>
+      <li>
+        <span class="h-icon h-icon-suspend"></span> 暂停</li>
+      <li>
+        <span class="h-icon h-icon-stop"></span> 结束、停止</li>
+      <li>
+        <span class="h-icon h-icon-assign"></span> 分配</li>
+      <li>
+        <span class="h-icon h-icon-alarm"></span> 预警</li>
+      <li>
+        <span class="h-icon h-icon-setting"></span> 设置</li>
+      <li>
+        <span class="h-icon h-icon-refresh"></span> 刷新</li>
+      <li>
+        <span class="h-icon h-icon-back"></span> 上一步、返回</li>
+      <li>
+        <span class="h-icon h-icon-next"></span> 下一步</li>
+      <li>
+        <span class="h-icon h-icon-lock"></span> 锁定</li>
+      <li>
+        <span class="h-icon h-icon-unlock"></span> 解锁</li>
+      <li>
+        <span class="h-icon h-icon-upload"></span> 上传</li>
+      <li>
+        <span class="h-icon h-icon-download"></span> 下载</li>
+      <li>
+        <span class="h-icon h-icon-import"></span> 导入</li>
+      <li>
+        <span class="h-icon h-icon-export"></span> 导出</li>
+      <li>
+        <span class="h-icon h-icon-send"></span> 发送、发布</li>
+      <li>
+        <span class="h-icon h-icon-resend"></span> 重传</li>
+      <li>
+        <span class="h-icon h-icon-upsend"></span> 上报、提交</li>
+      <li>
+        <span class="h-icon h-icon-downsend"></span> 下发</li>
+      <li>
+        <span class="h-icon h-icon-seal"></span> 签章</li>
+      <li>
+        <span class="h-icon h-icon-chart"></span> 图表</li>
+      <li>
+        <span class="h-icon h-icon-print"></span> 打印</li>
+      <li>
+        <span class="h-icon h-icon-operate"></span> 操作</li>
+      <li>
+        <span class="h-icon h-icon-sign-in"></span> 签收、签入</li>
+       <li>
+        <span class="h-icon h-icon-send-message"></span>回复、聊天</li>   
+        
+    </ul>
+  </div>
+  </div>
+  <div class="docs-highlight">
+    <pre><code></code></pre>
+  	</div>
+  
+  
+  
+  
+  <h3>其它图标库</h3>
+  <div class="docs-example">
+  <div class="docs-icons">
+    <ul class="docs-grid">
+      <li>
+        <span class="h-icon h-icon-org"></span> 组织树</li>
+      <li>
+        <span class="h-icon h-icon-org-active"></span> 组织树(激活)</li>
+      <li>
+        <span class="h-icon h-icon-fav"></span> 我的收藏</li>
+      <li>
+        <span class="h-icon h-icon-fav-active"></span> 我的收藏(激活)</li>
+    </ul>
+  </div>
+  </div>
+  <div class="docs-highlight">
+    <pre><code></code></pre>
+  	</div>
+  
+ 
+  
+  <!--------------------------------------------------------------------
+  	颜色
+  ---------------------------------------------------------------------->
+  <h3>背景颜色</h3>
+  <div class="docs-example">
+  <div class="h-container">
+    <div class="h-row docs-palette">
+      <div class="h-col-g12-2">
+        <div class="h-col-content">
+          <dl class="h-bg-muted-light">
+            <dt>#f3f3f3</dt>
+            <dd>h-bg-muted</dd>
+          </dl>
+          <dl class="h-bg-muted">
+            <dt>#f3f3f3</dt>
+            <dd>h-bg-muted</dd>
+          </dl>
+          <dl class="h-bg-muted-dark">
+            <dt>#cacccf</dt>
+            <dd>h-bg-muted</dd>
+          </dl>
+        </div>
+      </div>
+      <div class="h-col-g12-2">
+        <div class="h-col-content">
+          <dl class="h-bg-primary-light">
+            <dt>#5090f6</dt>
+            <dd>h-bg-primary</dd>
+          </dl>
+          <dl class="h-bg-primary">
+            <dt>#5090f6</dt>
+            <dd>h-bg-primary</dd>
+          </dl>
+          <dl class="h-bg-primary-dark">
+            <dt>#3079ed</dt>
+            <dd>h-bg-primary</dd>
+          </dl>
+        </div>
+      </div>
+      <div class="h-col-g12-2">
+        <div class="h-col-content">
+          <dl class="h-bg-success-light">
+            <dt>#5cb85c</dt>
+            <dd>h-bg-success</dd>
+          </dl>
+          <dl class="h-bg-success">
+            <dt>#5cb85c</dt>
+            <dd>h-bg-success</dd>
+          </dl>
+          <dl class="h-bg-success-dark">
+            <dt>#4cae4c</dt>
+            <dd>h-bg-success</dd>
+          </dl>
+        </div>
+      </div>
+      <div class="h-col-g12-2">
+        <div class="h-col-content">
+          <dl class="h-bg-info-light">
+            <dt>#5bc0de</dt>
+            <dd>h-bg-info</dd>
+          </dl>
+          <dl class="h-bg-info">
+            <dt>#5bc0de</dt>
+            <dd>h-bg-info</dd>
+          </dl>
+          <dl class="h-bg-info-dark">
+            <dt>#46b8da</dt>
+            <dd>h-bg-info</dd>
+          </dl>
+        </div>
+      </div>
+      <div class="h-col-g12-2">
+        <div class="h-col-content">
+          <dl class="h-bg-warning-light">
+            <dt>#f0ad4e</dt>
+            <dd>h-bg-warning</dd>
+          </dl>
+          <dl class="h-bg-warning">
+            <dt>#f0ad4e</dt>
+            <dd>h-bg-warning</dd>
+          </dl>
+          <dl class="h-bg-warning-dark">
+            <dt>#eea236</dt>
+            <dd>h-bg-warning</dd>
+          </dl>
+        </div>
+      </div>
+      <div class="h-col-g12-2">
+        <div class="h-col-content">
+          <dl class="h-bg-danger-light">
+            <dt>#d9534f</dt>
+            <dd>h-bg-danger</dd>
+          </dl>
+          <dl class="h-bg-danger">
+            <dt>#d9534f</dt>
+            <dd>h-bg-danger</dd>
+          </dl>
+          <dl class="h-bg-danger-dark">
+            <dt>#d43f3a</dt>
+            <dd>h-bg-danger</dd>
+          </dl>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <div class="docs-highlight">
+    <pre><code></code></pre>
+  	</div>
+  <!--------------------------------------------------------------------
+  	文字颜色
+  ---------------------------------------------------------------------->
+  <h3>文字颜色</h3>
+  <div class="docs-example">
+  <div class="h-container">
+    <div class="h-row">
+      <div class="h-col-g12-2">
+        <span class="h-color-muted"> 文字颜色：muted </span>
+      </div>
+      <div class="h-col-g12-2">
+        <span class="h-color-primary"> 文字颜色：primary </span>
+      </div>
+      <div class="h-col-g12-2">
+        <span class="h-color-success"> 文字颜色：success </span>
+      </div>
+      <div class="h-col-g12-2">
+        <span class="h-color-info"> 文字颜色：info </span>
+      </div>
+      <div class="h-col-g12-2">
+        <span class="h-color-warning"> 文字颜色：warning </span>
+      </div>
+      <div class="h-col-g12-2">
+        <span class="h-color-danger"> 文字颜色：danger </span>
+      </div>
+    </div>
+  </div>
+  </div>
+  <div class="docs-highlight">
+    <pre><code></code></pre>
+  	</div>
+    
+  <h3>提示图标</h3>
+  <div class="docs-example">
+  <div class="h-container">
+    <div class="h-row">
+      <div class="h-col-g12-3">
+        <span class="h-icon h-icon-info"></span>
+        <span class="h-icon h-icon-l h-icon-info-l"></span>
+        <span class="h-icon h-icon-xl h-icon-info-xl"></span>
+        <span class="h-icon h-icon-xxl h-icon-info-xxl"></span> 帮助信息
+      </div>
+      <div class="h-col-g12-3">
+        <span class="h-icon h-icon-success"></span>
+        <span class="h-icon h-icon-l h-icon-success-l"></span>
+        <span class="h-icon h-icon-xl h-icon-success-xl"></span>
+        <span class="h-icon h-icon-xxl h-icon-success-xxl"></span> 成功信息
+      </div>
+      <div class="h-col-g12-3">
+        <span class="h-icon h-icon-warning"></span>
+        <span class="h-icon h-icon-l  h-icon-warning-l"></span>
+        <span class="h-icon h-icon-xl h-icon-warning-xl"></span>
+        <span class="h-icon h-icon-xxl h-icon-warning-xxl"></span> 警示信息
+      </div>
+      <div class="h-col-g12-3">
+        <span class="h-icon h-icon-danger"></span>
+        <span class="h-icon h-icon-l h-icon-danger-l"></span>
+        <span class="h-icon h-icon-xl h-icon-danger-xl"></span>
+        <span class="h-icon h-icon-xxl h-icon-danger-xxl"></span> 错误信息
+      </div>
+    </div>
+  </div>
+  </div>
+  <div class="docs-highlight">
+    <pre><code></code></pre>
+  	</div>
+    
+    
+  <h2>组合控件</h2>
+  <h3>itemselector</h3>
+  <div class="docs-example">
+  <!--item-selectot--代码开始------------------------------------->
+  <div class="h-item-selector clearfix">
+    <div class="h-multi-select-container h-float-left">
+      <div class="h-multi-select">
+        <div class="h-multi-select-title">
+          可选项
+        </div>
+        <div class="h-multi-select-contant">
+          <select  multiple class="h-form-control h-form-control-noborder">
+            <option value="">这里是可以选择的项</option>
+            <option value="">这里是可以选择的项</option>
+            <option value="">这里是可以选择的项</option>
+            <option value="">这里是可以选择的项</option>
+            <option value="">这里是可以选择的项</option>
+            <option value="">这里是可以选择的项</option>
+            <option value="">这里是可以选择的项</option>
+            <option value="">这里是可以选择的项</option>
+            <option value="">这里是可以选择的项</option>
+            <option value="">这里是可以选择的项</option>
+            <option value="">这里是可以选择的项</option>
+            <option value="">这里是可以选择的项</option>
+            <option value="">这里是可以选择的项</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <div class="h-itemselector-btns-container">
+      <div class="h-itemselector-btns">
+        <div class="h-btn-group-v">
+          <a class="h-btn" href="#">
+            <span class="h-btn-content">
+            <span class="h-icon h-icon-to-first"></span>
+            </span>
+          </a>
+          <a class="h-btn" href="#">
+            <span class="h-btn-content">
+            <span class="h-icon h-icon-to-up"></span>
+            </span>
+          </a>
+          <a class="h-btn" href="#">
+            <span class="h-btn-content">
+            <span class="h-icon h-icon-to-right"></span>
+            </span>
+          </a>
+          <a class="h-btn" href="#">
+            <span class="h-btn-content">
+            <span class="h-icon h-icon-to-left"></span>
+            </span>
+          </a>
+          <a class="h-btn" href="#">
+            <span class="h-btn-content">
+            <span class="h-icon h-icon-to-down"></span>
+            </span>
+          </a>
+          <a class="h-btn" href="#">
+            <span class="h-btn-content">
+            <span class="h-icon h-icon-to-last"></span>
+            </span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="h-multi-select-container h-float-right">
+      <div class="h-multi-select">
+        <div class="h-multi-select-title">
+          已选项
+        </div>
+        <div class="h-multi-select-contant">
+          <select  multiple class="h-form-control h-form-control-noborder">
+            <option value="">这里已选择的项</option>
+            <option value="">这里已选择的项</option>
+            <option value="">这里已选择的项</option>
+            <option value="">这里已选择的项</option>
+            <option value="">这里已选择的项</option>
+            <option value="">这里已选择的项</option>
+            <option value="">这里已选择的项</option>
+            <option value="">这里已选择的项</option>
+            <option value="">这里已选择的项</option>
+            <option value="">这里已选择的项</option>
+            <option value="">这里已选择的项</option>
+            <option value="">这里已选择的项</option>
+            <option value="">这里已选择的项</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--item-selectot--代码结束------------------------------------->
+  </div>
+  <div class="docs-highlight">
+    <pre><code></code></pre>
+  	</div>
+  
+  
+  <h3>遮罩层</h3>
+  <div class="docs-example">
+  <div class="h-pos-re" style=" height:150px;">
+    <!--遮罩层-->
+    <div class="h-mask-wrapper">
+      <div class="h-mask">
+      </div>
+      <!--该iframe用于解决DIV层被OBJECT控件遮盖问题-->
+      <iframe src="about:blank"  frameBorder=0 class="h-mask-iframe"></iframe>
+    </div>
+  </div>
+  </div>
+  <div class="docs-highlight">
+    <pre><code></code></pre>
+  	</div>
+  <!--------------------------------------------------------------------
+  	警告框
+  ---------------------------------------------------------------------->
+  <h3>高级查询已选条件</h3>
+  <div class="docs-example">
+  <div class="h-search-condition">
+    <a href="#" class="h-close h-pull-right"></a>
+    <dl>
+      <dt>已选条件</dt>
+      <dd>单位：中软海晟；年度：2014年；仓库：厦门卷烟厂；烟叶品种：全部；烟叶类型：全部；烟叶等级：全部；>单位：中软海晟；年度：2014年；仓库：厦门卷烟厂；烟叶品种：全部；烟叶类型：全部；烟叶等级：全部；</dd>
+    </dl>
+  </div>
+  </div>
+  <div class="docs-highlight">
+    <pre><code></code></pre>
+  	</div>
+    
+    
+    
+    <h3>警告框</h3>
+  <div class="docs-example docs-example-alert">
+  <div class="h-container">
+    <div class="h-row">
+      <div class="h-col-g12-5">
+        <div class="h-col-content">
+          <h3>警告框带标题</h3>
+          <div class="h-alert h-alert-info">
+            <a href="#" class="h-close h-pull-right"></a>
+            <span class="h-icon h-icon-info"></span>
+            <strong>辅助信息</strong>
+            <span class="h-alert-text">辅助信息</span>
+          </div>
+          <div class="h-alert h-alert-info">
+            <a href="#" class="h-close h-pull-right"></a>
+            <strong>辅助信息</strong>
+            <span class="h-alert-text">国家局设置基地单元数量为：0个，已增加：0个，剩余：0个；特色优质烟叶单元数量为：0个，已增加：0个，剩余：0个;</span>
+          </div>
+          <div class="h-alert h-alert-success">
+            <a href="#" class="h-close h-pull-right"></a>
+            <span class="h-icon h-icon-success"></span>
+            <strong>成功信息</strong>
+            <span class="h-alert-text">成功信息</span>
+          </div>
+          <div class="h-alert h-alert-warning">
+            <a href="#" class="h-close h-pull-right"></a>
+            <span class="h-icon h-icon-warning"></span>
+            <strong>警示信息</strong>
+            <span class="h-alert-text">警示信息</span>
+          </div>
+          <div class="h-alert h-alert-danger">
+            <a href="#" class="h-close h-pull-right"></a>
+            <span class="h-icon h-icon-danger"></span>
+            <strong>错误信息</strong>
+            <span class="h-alert-text">错误信息</span>
+          </div>
+        </div>
+      </div>
+      <div class="h-col-g12-4">
+        <div class="h-col-content">
+          <h3>警告框不带标题</h3>
+          <div class="h-alert h-alert-info">
+            <a href="#" class="h-close h-pull-right"></a>
+            <span class="h-icon h-icon-info"></span>
+            <span class="h-alert-text">辅助信息</span>
+          </div>
+          <div class="h-alert h-alert-success">
+            <a href="#" class="h-close h-pull-right"></a>
+            <span class="h-icon h-icon-success"></span>
+            <span class="h-alert-text"> 成功信息</small>
+          </div>
+          <div class="h-alert h-alert-warning">
+            <a href="#" class="h-close h-pull-right"></a>
+            <span class="h-icon h-icon-warning"></span>
+            <span class="h-alert-text">警示信息</span>
+          </div>
+          <div class="h-alert h-alert-danger">
+            <a href="#" class="h-close h-pull-right"></a>
+            <span class="h-icon h-icon-danger"></span>
+            <span class="h-alert-text">错误信息</span>
+          </div>
+        </div>
+      </div>
+      <div class="h-col-g12-3">
+        <div class="h-col-content">
+          <h3>自适应内容宽度</h3>
+          <div class="h-alert h-alert-info h-inline-block">
+            <a href="#" class="h-close h-pull-right"></a>
+            <span class="h-icon h-icon-info"></span>
+            <span class="h-alert-text">辅助信息</span>
+          </div>
+          <br>
+          <div class="h-alert h-alert-success h-inline-block">
+            <a href="#" class="h-close h-pull-right "></a>
+            <span class="h-icon h-icon-success"></span>
+            <span class="h-alert-text">成功信息自适应内容</span>
+          </div>
+          <br>
+          <div class="h-alert h-alert-warning h-inline-block">
+            <a href="#" class="h-close h-pull-right"></a>
+            <span class="h-icon h-icon-warning"></span>
+            <span class="h-alert-text">警示信息</span>
+          </div>
+          <br>
+          <div class="h-alert h-alert-danger h-inline-block">
+            <a href="#" class="h-close h-pull-right"></a>
+            <span class="h-icon h-icon-danger"></span>
+            <span class="h-alert-text">错误信息自适应内容</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <div class="docs-highlight">
+    <pre><code></code></pre>
+  	</div>
+    
+    
+  <!--------------------------------------------------------------------
+    h-loading             默认图文字左右布局
+	h-loading-vertical    图文上下布局
+	
+    建议：除了小图标以外的其它尺寸图标都采用上下布局h-loading-vertical    
+
+  ---------------------------------------------------------------------->
+  
+  <h3>loading</h3>
+  <ul class="h-color-muted docs-list">
+    <li><code>.h-loading</code>默认图文左右布局</li>
+    <li><code>.h-loading-vertical</code>图文上下布局,建议：除了小图标以外的其它尺寸图标都采用此布局</li>
+  </ul>
+  <div class="docs-example">
+  <div class="h-dialog">
+      <div class="h-loading">
+        <span class="h-icon h-icon-loading"></span>
+        <span class="h-loading-text">数据加载中...</span>
+      </div>
+    </div>
+    <div class="h-dialog">
+      <div class="h-loading h-loading-vertical">
+        <span class="h-icon  h-icon-l h-icon-loading-l"></span>
+        <span class="h-loading-text">数据加载中...</span>
+      </div>
+    </div>
+    <div class="h-dialog">
+      <div class="h-loading h-loading-vertical">
+        <span class="h-icon  h-icon-xl h-icon-loading-xl"></span>
+        <span class="h-loading-text">数据加载中...</span>
+      </div>
+    </div>
+    <div class="h-dialog">
+      <div class="h-loading h-loading-vertical">
+        <span class="h-icon  h-icon-xxl h-icon-loading-xxl"></span>
+        <span class="h-loading-text">数据加载中...</span>
+      </div>
+    </div>
+    <div class="h-dialog">
+      <div class="h-loading h-loading-vertical">
+        <span class="h-icon  h-icon-xxxl h-icon-loading-xxxl"></span>
+        <span class="h-loading-text">数据加载中...</span>
+      </div>
+    </div>
+  </div>
+  
+  
+  <h3>进度条</h3>
+  <div class="docs-example">
+  	<div class="h-progress">
+            <div class="h-progress-bar" style="width:70%; background:#d9534f;">
+            </div>
+            <div class="h-progress-bar" style="width:60%;  background:#f0ad4e;">
+            </div>
+            <div class="h-progress-bar" style="width:50%; background:#5cb85c;">
+            </div>
+            <div class="h-progress-bar" style="width:40%; ">
+            </div>
+          </div>
+          <div class="h-progress-group h-marT">
+            <div class=" h-font-b">
+              初始化完成进度
+            </div>
+            <div class="h-progress">
+              <div class="h-progress-bar" style="width:70%;">
+              </div>
+            </div>
+            <div class="clearfix">
+              <div class="h-float-left">
+                已完成：5/32项
+              </div>
+              <div class="h-float-right">
+                85%
+              </div>
+            </div>
+          </div>
+  </div>
+  
+  
+  <h3>步骤条</h3>
+  <div class="docs-example">
+  	<div class="h-step-progress">
+            <div class="h-step h-step-1 ">
+              <div class="h-step-content">
+                <span class="h-icon">1</span>
+                <strong>之前的步骤</strong>
+              </div>
+            </div>
+            <div class="h-step h-step-2 h-step-active">
+              <div class="h-step-content">
+                <span class="h-icon">2</span>
+                <strong>当前步骤</strong>
+              </div>
+            </div>
+            <div class="h-step h-step-3">
+              <div class="h-step-content">
+                <span class="h-icon">3</span>
+                <strong>之后的步骤</strong>
+              </div>
+            </div>
+          </div>
+          
+  </div>
+
+
+
+
+
+  
+  <!--------------------------------------------------------------------
+  	缩略图
+  ---------------------------------------------------------------------->
+  <h3>缩略图</h3>
+  <div class="docs-example">
+  <div class="h-container">
+    <div class="h-row">
+      <div class="h-col-g12-9">
+        <div class="h-col-content">
+          <a href="#" class="h-thumbnail h-thumbnail-horizontal">
+            <p class="h-image-area">
+            <img src="../../../web/projects/themes-default/resources/images/upload-image1.jpg" style="height: 64px; width: 100%; display: block;" alt=""/>
+
+            </p>
+            <div class="h-caption">
+              <h3 class="h-caption-title">左右布局的缩略图</h3>
+              <p class="h-caption-content">设置左右布局需要增加<code>h-thumbnail-horizontal</code>样式</p>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="h-col-g12-3">
+        <div class=" h-col-content">
+          <a href="#" class="h-thumbnail">
+            <p class="h-image-area">
+              <img src="../../../web/projects/themes-default/resources/images/upload-image1.jpg" style="height: auto; width: 100%; display: block;" alt=""/>
+            </p>
+            <div class="h-caption">
+              <h3 class="h-caption-title">上下布局的缩略图</h3>
+              <p class="h-caption-content">默认缩略图是上下布局的</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <!--------------------------------------------------------------------
+  	上传图片
+  ---------------------------------------------------------------------->
+  <!--
+  <h3>上传单张图片</h3>
+  <div class="h-container">
+    <div class="h-row">
+      <div class="h-col-g12-2">
+        <div class="h-col-content">
+          <div class="h-upload-image-control">
+            <div class="h-upload-image">
+            </div>
+            <p class=" h-pad5">
+              <a class="h-btn h-btn" href="#">
+                <span class="h-btn-content">上传图片</span>
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="h-col-g12-2">
+        <div class="h-col-content">
+          <div class="h-upload-image-control">
+            <div class="h-upload-image">
+              <div class="h-progress-group">
+                <div class="h-progress">
+                  <div class="h-progress-bar" style="width:70%;"></div>
+                </div>
+                <div class="h-pull-left h-pl-5">86%</div>
+              </div>
+              <img src="../projects/themes-default/resources/images/upload-image1.jpg" alt=""/>
+            </div>
+            <p class=" h-pad5">
+              <a class="h-btn" href="#">
+                <span class="h-btn-content">取消</span>
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="h-col-g12-2">
+        <div class="h-col-content">
+          <div class="h-upload-image-control">
+            <div class="h-upload-image">
+              <img src="../projects/themes-default/resources/images/upload-image1.jpg" alt=""/>
+            </div>
+            <p class=" h-pad5">
+              <a class="h-btn" href="#">
+                <span class="h-btn-content">更改图片</span>
+              </a>
+              <a class="h-btn" href="#">
+                <span class="h-btn-content">
+                  <span class="h-icon h-icon-delete"></span>
+                </span>
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  -->
+  <h3>上传单张图片</h3>
+    <div class="docs-example">
+
+  <div class="h-container">
+    <div class="h-row">
+      <div class="h-col-g12-2">
+        <div class="h-col-content">
+          <a class="h-upload-image-control" href="#">
+            <div class="h-upload-image h-upload-image-add">
+            </div>
+          </a>
+        </div>
+      </div>
+      
+      <div class="h-col-g12-2">
+        <div class="h-col-content">
+          <div class="h-upload-image-control">
+            <div class="h-upload-image">
+              <a href="#" title="点击删除" class="h-icon h-icon-l h-icon-delete-danger-l"></a>
+              <p class="h-upload-image-toolbar">
+                  <a href="#" title="查看大图" class="h-icon h-icon-l h-icon-view-big-l"></a>
+                  <a href="#" title="下载" class="h-icon h-icon-l h-icon-download-l"></a>
+              </p>
+              <div class="h-progress-group">
+                <div class="h-progress">
+                  <div class="h-progress-bar" style="width:70%;">
+                  </div>
+                </div>
+                <div class="h-pull-left h-pl-5">
+                  86%
+                </div>
+              </div>
+              <p class="h-upload-img"><img src="../../../web/projects/themes-default/resources/images/upload-image1.jpg" alt=""/></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="h-col-g12-2">
+        <div class="h-col-content">
+          <div class="h-upload-image-control">
+            <div class="h-upload-image h-no-images">
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  
+  <!--------------------------------------------------------------------
+  	上传图片
+  ---------------------------------------------------------------------->
+  <h3>上传多张图片</h3>
+  <div class="docs-example">
+  <div class="h-panel">
+    <div class="h-panel-header">
+      <div class="h-pull-left">
+        <div class="h-panel-title h-inline-block">
+          上传多张图片
+        </div>
+      </div>
+      <div class="h-pull-right h-text-right">
+      </div>
+    </div>
+    <div class="h-toolbar">
+      <div class="h-pull-left h-inline-block-wrapper">
+        <a class="h-btn h-btn-toolbar disabled" href="#">
+          <span class="h-btn-content">
+          <span class="h-icon h-icon-add"></span> 添加文件 </span>
+        </a>
+        <a class="h-btn h-btn-toolbar" href="#">
+          <span class="h-btn-content">
+          <span class="h-icon h-icon-delete"></span> 删除 </span>
+        </a>
+      </div>
+      <div class="h-pull-right h-text-right">
+        <div class="h-form-inline">
+          <div class="h-form-group">
+            <div class="h-form-control-wrapper">
+              <div class="h-input-group">
+                <div class="h-form-control-group">
+                  <span class=" h-icon h-icon-search"></span>
+                  <a class=" h-icon h-icon-close" href="#"></a>
+                  <input type="text" class="h-form-control" style="padding-left:25px; padding-right:25px;" id="" placeholder="查找图片">
+                </div>
+                <span class="h-input-group-btn">
+                <a class="h-btn" href="#">
+                  <span class="h-btn-content">
+                  <span class="h-icon h-icon-search"></span>
+                  </span>
+                </a>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="h-panel-body">
+      <div class="h-upload-image-control-list">
+        <div class="h-upload-image-control">
+          <div class="h-upload-image">
+            <a href="#" title="点击删除" class="h-icon h-icon-l h-icon-delete-danger-l"></a>
+            <p class="h-upload-image-toolbar">
+                  <a href="#" title="查看大图" class="h-icon h-icon-l h-icon-view-big-l"></a>
+                  <a href="#" title="下载" class="h-icon h-icon-l h-icon-download-l"></a>
+              </p>
+            <p class="h-upload-img"><img src="../../../web/projects/themes-default/resources/images/高.jpg" alt=""/></p>
+          </div>
+          <p class="h-upload-image-name" title="完整的名称"> 此处为图片名称此处为图片名称此处为图片名称此处为图片名称 </p>
+        </div>
+        <div class="h-upload-image-control">
+          <div class="h-upload-image">
+            <a href="#" title="点击删除" class="h-icon h-icon-l h-icon-delete-danger-l"></a>
+            <div class="h-progress-group">
+              <div class="h-progress">
+                <div class="h-progress-bar" style="width:70%;">
+                </div>
+              </div>
+              <div class="h-pull-left h-pl-5">
+                86%
+              </div>
+            </div>
+            <p class="h-upload-image-toolbar">
+                  <a href="#" title="查看大图" class="h-icon h-icon-l h-icon-view-big-l"></a>
+                  <a href="#" title="下载" class="h-icon h-icon-l h-icon-download-l"></a>
+              </p>
+            <p class="h-upload-img"><img src="../../../web/projects/themes-default/resources/images/长.jpg" alt=""/></p>
+          </div>
+          <p class="h-upload-image-name" title="完整的名称"> 此处为图片名称此处为图片名称此处为图片名称此处为图片名称 </p>
+        </div>
+        <div class="h-upload-image-control h-upload-image-control-dange">
+          <div class="h-upload-image ">
+            <a href="#" title="点击删除" class="h-icon h-icon-l h-icon-delete-danger-l"></a>
+            <p class="h-upload-image-toolbar">
+                  <a href="#" title="查看大图" class="h-icon h-icon-l h-icon-view-big-l"></a>
+                  <a href="#" title="下载" class="h-icon h-icon-l h-icon-download-l"></a>
+            </p>
+            <div class="h-alert h-alert-danger">
+              <span class="h-icon h-icon-danger"></span>
+              <span class="h-alert-text">上传失败</span>
+            </div>
+            <p class="h-upload-img"><img src="../../../web/projects/themes-default/resources/images/upload-image1.jpg" alt=""/></p>
+          </div>
+          <p class="h-upload-image-name" title="完整的名称"> 此处为图片名称此处为图片名称此处为图片名称此处为图片名称</p>
+        </div>
+        <div class="h-upload-image-control">
+          <div class="h-upload-image h-no-images ">
+          </div>
+          <p class="h-upload-image-name" title="暂无图片">暂无图片</p>
+        </div>
+        <a class="h-upload-image-control" href="#">
+          <div class="h-upload-image h-upload-image-add">
+          </div>
+          <p class="h-upload-image-name" title="添加图片">点击添加</p>
+        </a>
+      </div>
+    </div>
+    <div class="h-toolbar h-toolbar-footer">
+      <div class="h-pull-left">
+        <span class="h-color-muted">共8张图片，39.06M（上传过程中请不要删除原始图片）</span>
+      </div>
+      <div class=" h-pull-right h-inline-block-wrapper">
+        <a class="h-btn h-btn-form h-btn-primary " href="#">
+          <span class="h-btn-content"> 上传 </span>
+        </a>
+        <a class="h-btn h-btn-form" href="#">
+          <span class="h-btn-content"> 停止 </span>
+        </a>
+        <a class="h-btn h-btn-form" href="#">
+          <span class="h-btn-content"> 取消 </span>
+        </a>
+      </div>
+    </div>
+  </div>
+  </div>
+  
+  
+  <!--------------------------------------------------------------------
+  	工具栏
+  ---------------------------------------------------------------------->
+  <h3>工具栏</h3>
+      <div class="docs-example">
+
+  <div class="h-toolbar">
+    <div class="h-pull-left h-inline-block-wrapper">
+      <a class="h-btn h-btn-toolbar disabled" href="#">
+        <span class="h-btn-content">
+        <span class="h-icon h-icon-add"></span> 增加 </span>
+      </a>
+      <a class="h-btn h-btn-toolbar" href="#">
+        <span class="h-btn-content">
+        <span class="h-icon h-icon-delete"></span> 删除 </span>
+      </a>
+      <span class="h-btn-separator"></span>
+      <a class="h-btn h-btn-toolbar" href="#">
+        <span class="h-btn-content">
+        <span class="h-icon h-icon-delete"></span> 删除 </span>
+      </a>
+    </div>
+    <div class="h-pull-right h-text-right">
+      <div class="h-form-inline" >
+        <div class="h-form-group">
+          <div class="h-form-label-wrapper">
+            <label class="h-form-label h-text-right" for="">委托单位</label>
+          </div>
+          <div class="h-form-control-wrapper">
+            <input type="text" class="h-form-control" id="" placeholder="委托单位" />
+          </div>
+        </div>
+        <div class="h-form-group">
+          <div class="h-form-label-wrapper">
+            <label class="h-form-label h-text-right" for="">烟叶品种</label>
+          </div>
+          <div class="h-form-control-wrapper" >
+            <div class="h-input-group" >
+              <div class="h-form-control-group">
+                <span class=" h-icon h-icon-search"></span>
+                <a class=" h-icon h-icon-close" href="#"></a>
+                <input type="text" class="h-form-control"  style="padding-left:25px; padding-right:25px;" style="width:160px;"   id="" placeholder="单据日期">
+              </div>
+              <span class="h-input-group-btn">
+              <a class="h-btn" href="#">
+                <span class="h-btn-content">
+                <span class="h-icon h-icon-search"></span>
+                </span>
+              </a>
+              </span>
+            </div>
+          </div>
+        </div>
+        <a class="h-btn" href="#"><span class="h-btn-content">查询</span></a>
+        <a class="h-btn" href="#"><span class="h-btn-content">高级 <span class="h-caret"></span></span></a>
+      </div>
+    </div>
+  </div>
+  </div>
+</div>
+</div>
+</body>
+</html>

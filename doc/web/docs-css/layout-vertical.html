@@ -1,0 +1,62 @@
+<!doctype html>
+<html class="docs-html">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>ICSSHS-UI</title>
+  <!--项目全局样式-->
+  <link href="../../../web/projects/themes-default/resources/css/global.css" rel="stylesheet" type="text/css">
+  <link href="../../../web/projects/themes-default/resources/css/css3-hsui.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" type="text/css" href="../../../web/dcresources/icons/action/themes-default/icon-action.css">
+  <!--说明文档样式,实际应用中请不要引用-->
+  <link rel="stylesheet" type="text/css" href="../../resources/css/docs.css">
+  <script src="../../../web/projects/themes-default/resources/js/jquery-1.9.1.js"></script>
+</head>
+<body>
+<div class="docs-content">
+  <div class="docs-page-masthead">
+    <h1>垂直布局</h1>
+    <p class="docs-lead">它将整个容器分为垂直的N个部分，垂直布局采用<code>position: absolute</code>来布局，所以其父容器必须指定<code>position: relative;</code>，另外所有的布局都需要考虑到各个部份之间的间隔。程序实现时可以通过设定一个间隔参数space。</p>
+  </div>
+  
+    <h2>使用方法</h2>
+  <p >垂直布局,需要在style上设定<code>height</code>,<code>top</code>以及<code>bottom</code>的值</p>
+
+  <p >
+  各个部分的高度可以同时设置具体的值(以PX为单位)也可以设置百分比（%）；百分比高度值=（总高度-固定高度的总和）* 百分数%；
+  	
+  </p>
+
+    
+  <div class="docs-example docs-example-layout-vertical">
+  
+  <!-- 布局 +++++++++++++++++++++++++开始+++++++++++++++++++++++++++++++++++++++-->
+    <div class="h-row-vertical" style="height:400px;">
+    	<div class="h-col-t" style="height:30px; top:0; ">
+        	top
+        </div>
+        <div class="h-col-t" style="height:30px; top:35px; ">
+        	top
+        </div>
+        
+        <div class="h-col-m" style=" top:70px; bottom:70px; ">
+        	middle
+        </div>
+        
+        
+        <div class="h-col-b" style="height:30px; bottom:35px;">
+        	bottom
+        </div>
+        <div class="h-col-b" style="height:30px; bottom:0;">
+        	bottom
+        </div>
+        
+    </div>
+  <!-- 布局 +++++++++++++++++++++++++结束+++++++++++++++++++++++++++++++++++++++--> 
+  </div>
+  <div class="docs-highlight">
+    <pre><code></code></pre>
+  </div>
+  
+</div>
+</body>
+</html>
